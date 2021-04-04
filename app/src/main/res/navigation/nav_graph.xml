@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/redFragment">
+    <fragment
+        tools:layout="@layout/red_fragment_layout"
+        android:id="@+id/redFragment"
+        android:name="com.lightscout.radioreaction101.RedFragment"
+        android:label="RedFragment">
+        <action
+            android:id="@+id/action_redFragment_to_greenFragment"
+            app:destination="@id/greenFragment"
+           />
+    </fragment>
+    <fragment
+        tools:layout="@layout/green_fragment_layout"
+        android:id="@+id/greenFragment"
+        android:name="com.lightscout.radioreaction101.GreenFragment"
+        android:label="GreenFragment" >
+        <action
+            android:id="@+id/action_greenFragment_to_redFragment2"
+            app:destination="@id/redFragment"
+            app:enterAnim="@anim/fragment_fade_enter" />
+        <argument
+            android:name="pivotPoints"
+            app:argType="float[]" />
+    </fragment>
+</navigation>

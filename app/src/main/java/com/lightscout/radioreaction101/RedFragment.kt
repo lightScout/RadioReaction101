@@ -2,15 +2,10 @@ package com.lightscout.radioreaction101
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.transition.Explode
-import android.util.Log
-import android.view.*
-import androidx.dynamicanimation.animation.FloatPropertyCompat
-import androidx.dynamicanimation.animation.SpringAnimation
-import androidx.dynamicanimation.animation.SpringForce
+import android.view.View
+import android.view.ViewAnimationUtils
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.navigation.navOptions
 import kotlin.math.hypot

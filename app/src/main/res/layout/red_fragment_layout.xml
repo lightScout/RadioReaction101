@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@android:color/holo_red_light"
-    >
+    android:clickable="true"
+    android:focusable="true">
+
 
 
 
